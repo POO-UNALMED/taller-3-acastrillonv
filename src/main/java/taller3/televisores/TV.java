@@ -6,7 +6,7 @@ public class TV {
 	Control control;
 	static int canal=1;
 	static int precio=500;
-	boolean estado;
+	static boolean estado;
 	static int volumen=1;
 	static int numTV;
 	
@@ -53,7 +53,10 @@ public class TV {
 	}
 
 	public static void setCanal(int canal) {
-		TV.canal = canal;
+		if ((canal>=1) && (canal<=120)  && (TV.estado==true)){
+			TV.canal = canal;
+		}
+
 	}
 
 	public static int getPrecio() {
