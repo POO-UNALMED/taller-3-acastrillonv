@@ -10,6 +10,14 @@ public class TV {
 	static int volumen=1;
 	static int numTV;
 	
+	public static int getNumTV() {
+		return numTV;
+	}
+
+	public static void setNumTV(int numTV) {
+		TV.numTV = numTV;
+	}
+
 	public TV(Marca marca,boolean estado) {
 		this.marca=marca;
 		this.estado=estado;
