@@ -72,7 +72,9 @@ public class TV {
 	}
 
 	public static void setVolumen(int volumen) {
+		if ((TV.estado==true) && (volumen>=0) && (volumen<=7)){
 		TV.volumen = volumen;
+		}
 	}
 
 
