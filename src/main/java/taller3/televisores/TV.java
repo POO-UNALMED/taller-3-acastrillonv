@@ -6,7 +6,7 @@ public class TV {
 	Control control;
 	static int canal=1;
 	static int precio=500;
-	static boolean estado;
+	static boolean estado=false;
 	static int volumen=1;
 	static int numTV;
 	
@@ -20,7 +20,7 @@ public class TV {
 
 	public TV(Marca marca,boolean estado) {
 		this.marca=marca;
-		this.estado=estado;
+		estado=this.estado;
 		++numTV;
 	}
 	
