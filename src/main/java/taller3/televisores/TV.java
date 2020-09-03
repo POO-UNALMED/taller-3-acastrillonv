@@ -4,10 +4,10 @@ public class TV {
 
 	Marca marca;
 	Control control;
-	static int canal=1;
-	static int precio=500;
-	static boolean estado;
-	static int volumen=1;
+	int canal=1;
+	int precio=500;
+	boolean estado;
+	int volumen=1;
 	static int numTV;
 	
 	public static int getNumTV() {
@@ -48,32 +48,32 @@ public class TV {
 		this.control = control;
 	}
 
-	public static int getCanal() {
+	public int getCanal() {
 		return canal;
 	}
 
-	public static void setCanal(int canal) {
-		if ((canal>=1) && (canal<=120)  && (TV.estado==true)){
-			TV.canal = canal;
+	public void setCanal(int canal) {
+		if ((canal>=1) && (canal<=120)  && (estado==true)){
+			this.canal = canal;
 		}
 
 	}
 
-	public static int getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
 
-	public static void setPrecio(int precio) {
-		TV.precio = precio;
+	public void setPrecio(int precio) {
+		this.precio = precio;
 	}
 
-	public static int getVolumen() {
+	public int getVolumen() {
 		return volumen;
 	}
 
-	public static void setVolumen(int volumen) {
-		if ((TV.estado==true) && (volumen>=0) && (volumen<=7)){
-		TV.volumen = volumen;
+	public void setVolumen(int volumen) {
+		if ((estado==true) && (volumen>=0) && (volumen<=7)){
+		this.volumen = volumen;
 		}
 	}
 

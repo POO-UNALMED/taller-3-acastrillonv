@@ -17,14 +17,10 @@ public class Control {
 		}
 	}
 	public void canalUp() {
-		if ((tv.estado==true) && (tv.canal >= 1) && (tv.canal < 120)) {
-			tv.canalUp();
-		}
+			tv.canalUp();	
 	}
 	public void canalDown() {
-		if ((tv.estado==true) && (tv.canal>1) && (tv.canal<=120)) {
 			tv.canalDown();
-			}
 	}
 	public void volumenUp() {
 		tv.volumenUp();
